@@ -1,0 +1,597 @@
+@font-face {
+    font-family: Rubik;
+    src: url("Rubik glitch.woff2");
+}
+@font-face {
+    font-family: Permanent-Marker;
+    src: url("Permanent marker.woff2");
+}
+
+body{
+    background-image: linear-gradient(to right, #dddcbc, #7d73ae);
+    margin: 0;
+    padding-bottom: 2%;
+    font-family: Arial;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    display: flex;
+}
+
+
+/*Header*/
+header {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url("colorpicker.jpg");
+    background-size: cover;
+    padding: 7% 8% 7% 8%;
+    text-align: center;
+}
+
+
+.leaf-navbar{
+
+}
+
+.burger-shower{
+    visibility: hidden;
+}
+
+.hamburger-menu{
+    align-self: center;
+    max-width: 20vw;
+}
+
+
+/*restlicher Header Inhalt*/
+
+.header-cont{
+    background-color: #fffdf2; /*altweiß*/
+    box-sizing: border-box;
+    max-height: inherit;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: Arial;
+    box-shadow: inset 0 0 20px #c1a276;
+    padding: 2% 2% 2% 2%;
+
+}
+
+.header-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3%;
+    max-width: 50%;
+    max-height: inherit;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 5em;
+    font-family: Arial;
+    text-shadow: 0 0 10px #c1a276;
+    font-weight: 600;
+}
+
+.portrait{
+    max-width: 40%;
+    max-height: 30vh;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.big-leaf{
+    margin-top: 1%;
+    margin-bottom: 2%;
+    max-height: 15vh;
+    max-width: 10vw;
+    object-fit: contain;
+}
+
+/*Leaf-navbar*/
+.leaf-navbar {
+    box-sizing: border-box;
+    margin-left: 2%;
+}
+
+.small-leaf{
+    max-width: 15%;
+    height: auto;
+    object-fit: contain;
+    padding: 5%;
+
+}
+
+.leav-link{
+    box-sizing: border-box;
+    width: 90%;
+    max-height: 15vh;
+    display: flex;
+    align-items: center;
+    padding: 1%;
+    margin-bottom: 5%;
+    text-decoration: none;
+    color: black;
+}
+
+.leav-link:hover{
+    text-decoration: underline;
+    background-color: #bfc7ad;
+}
+
+
+.leav-link h3{
+    margin: 0 10% 0 10%;}
+
+
+/*Farbige Rahmen um Blätter in Nav*/
+.color1{
+    border: 4px outset #e29401;
+
+}
+.color2{
+    border: 4px outset #c9bdf6;
+}
+.color3{
+    border: 4px outset #db57aa;
+}
+.color4{
+    border: 4px outset #cdd90a;
+}
+.color5{
+    border: 4px outset #fa1005;
+}
+
+
+
+
+/*Seitenstreifen (Baumstamm)*/
+.branch-cont{
+    background-image: url("birch1.png");
+    width: 9%;
+    border-right: 2px solid black;
+
+}
+
+.section-twig-cont{
+    display: flex;
+    width: inherit;
+    justify-content: space-evenly;
+
+}
+.twig-container{
+    width: 18%;
+}
+
+.birchbranch{
+    width: 120%;
+}
+
+
+/*großer Container für alle Sections*/
+.section-container{
+    width: 91%;
+    padding-top: 3%;
+    padding-left: 0;
+    margin: 0 auto;
+}
+
+
+/*allgemeines Styling der Sections*/
+.typical-section{
+    margin: 3% 3% 3% 0;
+    box-shadow: 3px 10px 10px;
+    display: flex;
+    min-height: 70vh;
+    width: 85%;
+    background-color: black;
+    align-items: center;
+    border-radius: 10px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+
+.section-text-container h2{
+    font-family: Rubik, cursive;
+    font-weight: 400;
+    color: white;
+}
+
+
+.section-text-container{
+    max-width: 45%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.section-text-container h3{
+    color: white;
+    font-size: 28px;
+}
+
+
+.big-sec-image{
+    max-width: 40%;
+    margin: 0 5% 0 5%;
+
+}
+
+
+/*Animationen*/
+.appear{
+    animation: einblenden 3s;
+    -moz-animation: einblenden 3s; /* Für Firefox */
+    -webkit-animation: einblenden 3s; /* Für Safari und Chrome */
+    -o-animation: einblenden 3s; /* Für Opera */
+}
+
+@keyframes einblenden {
+    from { opacity:0; }
+    to { opacity:1; }
+}
+
+
+
+/*Section1: Interessen*/
+.about-me-sec{
+    color: #e29401;
+    justify-content: flex-start;
+}
+.about-me-sec h3{
+    text-shadow: 3px 3px 3px #e29401;
+}
+
+
+/*Section 2: Motivation für IT*/
+.motivation-sec {
+    color: #c9bdf6;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+}
+
+.motivation-sec h3{
+    text-shadow: 3px 3px 3px #c9bdf6;
+}
+
+/*Section3: Lebenslauf*/
+.cv-sec{
+    color: #db57aa;
+    justify-content: flex-start;
+    width: inherit;
+}
+
+.cv-sec h3{
+    text-shadow: 3px 3px 3px #db57aa;
+}
+
+
+.cv-sec a{
+    color:#db57aa;
+    line-height: 200%;
+}
+.cv-sec ul {
+    list-style-type: circle;
+}
+
+#animation3{
+    width: 100%;
+}
+
+/*Sektion4: Kontakt*/
+
+.contact-sec{
+    color: #cdd90a;
+    justify-content: center;
+}
+
+.contact-sec h4{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+
+.contact-sec h3{
+    text-shadow: 3px 3px 3px #cdd90a;
+}
+
+textarea{
+    width: 100%;
+}
+
+label{
+    display: block;
+}
+
+.icon{
+    width: 30px;
+    padding-left: 10px;
+
+}
+
+/*Sektion 5: Projekte*/
+.project-sec{
+    color: #fa1005;
+}
+
+.project-sec h3{
+    text-shadow: 3px 3px 3px #fa1005;
+}
+
+.project-sec ul{
+    list-style: circle;
+    font-size: medium;
+}
+
+.project-sec a{
+    line-height: 200%;
+    color: #fa1005;
+}
+
+.elefant{
+    width: 20%;
+}
+
+/*Nach oben Link*/
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    box-shadow: 0 0 10px lightgrey;
+    padding: 0.5%;
+}
+
+footer a{
+    text-decoration: none;
+    border-radius: 10%;
+    padding: 1%;
+    box-shadow: 0 0 10px pink;
+    background-color: lightgrey;
+}
+
+footer a:hover{
+    color: #db57aa;
+    font-weight: bold;
+}
+
+
+@media (max-width: 900px){
+
+    h1{
+        font-size: 3em;
+    }
+
+    .about-me-sec, .motivation-sec, .cv-sec, .contact-sec, .project-sec{
+        flex-direction: column;
+    }
+
+
+    .section-text-container{
+        max-width: 90%;
+    }
+
+    .leaf-navbar h3{
+        font-size: 16px;   }
+}
+
+@media (max-width: 600px){
+    .leaf-navbar{
+        visibility: hidden;
+    }
+
+    #hamburger-input:checked + #hamburger-menu .leaf-navbar{
+        position: fixed;
+        height: 100vh;
+        width: 50vw;
+        background-color: #fffdf2;
+        padding: 2%;
+        left: 0;
+        visibility: visible;
+    }
+
+
+    .header-cont{
+        max-height: inherit;
+        align-self: center;
+        padding: 2%;
+        flex-direction: column-reverse;
+    }
+
+    .header-left{
+        align-self: center;
+        padding: 0;
+        max-width: 90%;
+    }
+
+    .portrait{
+        max-height: 30vh;
+        max-width: 70%;
+    }
+
+
+    .leaf-navbar h3{
+        font-size: small;
+    }
+
+    #hamburger-menu{
+        position: fixed;
+        top: 5vh;
+        right: 5vw;
+        border-radius: 10%;
+        width: 40px;
+        height: 40px;
+        background-image: url("burger-menu.png");
+        background-size: cover;
+        border: 3px solid black;
+    }
+
+
+    h1{
+        font-size: 2em;
+    }
+
+    .typical-section{
+        width: 98%;
+        margin-left: 2%;
+        justify-content: center;
+    }
+    .twig-container{
+        width: 0;
+        visibility: hidden;
+    }
+
+}
+@media (max-device-width: 900px){
+
+    h1{
+        font-size: 3em;
+    }
+
+    .about-me-sec, .motivation-sec, .cv-sec, .contact-sec, .project-sec{
+        flex-direction: column;
+    }
+
+
+    .section-text-container{
+        max-width: 90%;
+    }
+
+    .leaf-navbar h3{
+        font-size: 16px;   }
+}
+
+.portrait{
+    height: 35vh;
+}
+
+@media  (max-device-width: 600px){
+
+    .leaf-navbar{
+        visibility: hidden;
+    }
+    #hamburger-input:checked + #hamburger-menu .leaf-navbar{
+        position: fixed;
+        height: 100vh;
+        width: 50vw;
+        background-color: #fffdf2;
+        padding: 2%;
+        left: 0;
+        visibility: visible;
+    }
+
+
+    .header-cont{
+        height: 80vh;
+        width: 80vw;
+       align-self: center;
+        padding: 2%;
+        flex-direction: column-reverse;
+    }
+
+    .header-left{
+        align-self: center;
+        padding: 0;
+        max-width: 90%;
+    }
+
+    .portrait{
+        max-width: 40vw;
+    }
+
+
+    .leaf-navbar h3{
+        font-size: small;
+    }
+
+    #hamburger-menu{
+        position: fixed;
+        top: 3vh;
+        right: 5vw;
+        border-radius: 10%;
+        width: 60px;
+        height: 60px;
+        background-image: url("burger-menu.png");
+        background-size: cover;
+        border: 3px solid black;
+    }
+
+
+    h1{
+        font-size: 2em;
+    }
+
+    .typical-section{
+        width: 98%;
+        margin-left: 2%;
+        justify-content: center;
+    }
+    .twig-container{
+        width: 0;
+        visibility: hidden;
+    }
+
+}
+
+
+
+@media (max-width: 350px){
+    .header-cont{
+        align-self: center;
+        padding: 2%;
+        justify-content: center;
+    }
+
+    h1{
+        font-size: 1.3em;
+    }
+
+    header{
+        padding: 5%;
+    }
+
+    .header-left{
+        align-self: center;
+        padding: 0;
+        max-width: 90%;
+    }
+
+    .branch-cont{
+        width: 0;
+        visibility: hidden;
+    }
+
+    section h2{
+        font-size: 1.2em;
+    }
+
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+    body {
+        margin: 0;
+        scroll-snap-type: y mandatory;
+        scroll-behavior: smooth;
+    }
+
+    section {
+        min-height: 85vh;
+        scroll-snap-align: start;
+        scroll-margin: 5vh;
+        scroll-behavior: smooth;
+    }
+}
+
+
+
